@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(#E2B69B,#E4BB9F,#B2968A);
+    background-size:cover;
+    height: 100vh;
+}
+header p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: #eee;
+    font-weight: 200;
+    padding: 30px;
+    cursor: pointer;
+  
+}
+header{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+   
+}
+.nav-link{
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+}
+.nav-link a{
+    font-family:Montserrat;
+    text-decoration: none;
+    margin: 25px;
+    font-size: 25px;
+    color:#FDFDFD;
+     
+}
+.nav-link li a:hover{
+    color:#602F20;
+}
+.home-nav{
+    border:3px solid #8B6349;
+    padding:10px;
+}
+.hamburger{
+    display:none;
+}
+.bar{
+    display:block;
+    width:25px;
+    height:3px;
+    margin:5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    background-color: #eee;
+}
+main{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-image: linear-gradient(#E2B69B,#E4BB9F,#B2968A);
+}
+.content-left{
+    color:#6E3323;
+    font-family: Montserrat;
+    padding:60px 0px 0 30px;
+    position: relative;
+    bottom: 80px;
+    
+}
+.content-left h1{
+    line-height: 1.5;
+    padding: 10px 0;
+}
+.content-left p{
+    padding:0px 10px 0 0;
+}
+.content-left h2{
+    line-height: 1;
+   
+}
+.content-right{
+    
+    position: relative;
+    bottom: 50px;
+    
+}
+.content-right img{
+    border:1px solid #E2B69B;
+    margin-right:20px;
+    box-shadow: 0 5px 10px #B2968A;
+}
+.content-left button{
+    padding: 9px 25px;
+    color:#eee;
+    background-color: #602F20;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    margin-top: 20px;
+}
+.content-left button:hover{
+    background-color: #B2968A;
+}
+.abt-content1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about{
+    background-color: #eee;
+}
+.abt-content1 p{
+    position: relative;
+    right:10%;
+    font-size: 30px;
+    font-family:Montserrat ;
+    color:#7B6C67;
+}
+.abt-content2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.abt-content2 p{
+    position: relative;
+    left:10%;
+    font-size: 30px;
+    font-family:Montserrat ;
+    color:#7B6C67;
+}
+.img-1{
+    position: relative;
+    top:30px;
+    left:60px;
+    box-shadow: 10px 10px 10px 10px #7B6C67 ;
+}
+.img-2{
+    position: relative;
+    bottom:30px;
+    right:30px;
+    box-shadow: 10px 10px 10px 10px #7B6C67 ;
+    
+}
+.img-3{
+    position: relative;
+    bottom:20px;
+    left:60px;
+    box-shadow: 10px 10px 10px 10px #7B6C67 ;
+}
+
+/* Style the container with a rounded border, grey background and some padding and margin */
+.testimonial-container {
+    border: 2px solid #ccc;
+    background-color:#8B6349;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    justify-content:space-around;
+    color:#eee;
+    font-family: Montserrat, sans-serif;
+  }
+  
+
+  
+  /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+  .testimonial-container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  /* Increase the font-size of a span element */
+  .testimonial-container span {
+    font-size: 20px;
+    margin-right: 15px;
+    
+  }
+  footer {
+    text-align: center;
+    text-decoration: none;
+    padding: 3px;
+    background-color:#E4BB9F;
+    color:#6E3323;
+    font-family: Montserrat;
+   
+  }
+  footer a{
+    text-decoration: none;
+  }
+  
+  /* Add media queries for responsiveness. This will center both the text and the image inside the container */
+  @media (max-width: 1000px) {
+    html,body{
+        width:100%;
+        height:100%;
+        margin: 0;
+        padding:0;
+        overflow-x: hidden;
+    }
+    
+    .hamburger{
+        display:block;
+        
+    }
+    nav{
+        display: none;
+    }
+   
+    body{
+        background-image: linear-gradient(#E2B69B,#E4BB9F,#B2968A);
+        background-size:cover;
+        height: 100vh;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+      
+    }
+    main .content-left{
+        width:400px;
+        margin:40px 5px 0 0 ;
+    }
+    main .content-right{
+       display:inline-block;
+       width:120px;
+       margin:10px 300px 0 0;
+       object-fit: cover;
+    
+    }
+    .abt-content1{
+        display: flex;
+        flex-direction: column;
+    }
+    .abt-content1 p{
+        width:200px;
+        margin:60px 90px 0 105px ;
+        text-align: center;
+
+    }
+    .img-1{
+        display:inline-block;
+        width:60px;
+        margin:10px 350px 0 0;
+        object-fit: cover;
+    }
+    .abt-content2{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .abt-content2 p{
+        width:200px;
+        margin:80px 140px 0 35px ;
+        text-align: center;
+    
+    }
+    .img-2{
+        display:inline-block;
+        width:60px;
+        object-fit: cover;
+        margin:80px 165px 20px 0;
+    }
+    .img-3{
+        display:inline-block;
+        width:60px;
+        margin:60px 350px 0 0;
+        object-fit: cover;
+    }
+    .content-left button{
+        margin:20px 100px 10px 100px;
+    }
+    
+    .testimonial-container {
+      text-align: center;
+    }
+  
+    .testimonial-container img {
+      margin: auto;
+      float: none;
+      display: block;
+    }
+   
+  }
